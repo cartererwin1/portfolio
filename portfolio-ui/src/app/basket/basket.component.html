@@ -1,0 +1,17 @@
+<h3>Your Basket</h3>
+<ul class="needs">
+    <li *ngFor="let need of needs">
+      <a routerLink="/detail/{{need.id}}">
+        <span class="badge">{{need.id}}</span> {{need.name}} - Cost: {{need.cost | currency}}
+      </a>
+      <button type="button" class="delete" title="delete need"
+        (click)="removeFromBasket(need.id)">x</button>
+    </li>
+  </ul>
+  <button type="button" class="add-button" (click)="checkout()">Checkout</button>
+  
+  <div *ngIf="total !== undefined">
+    Total: {{ total | currency }}
+  </div>
+
+  

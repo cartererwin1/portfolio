@@ -1,0 +1,13 @@
+<div *ngIf="need">
+    <h2>{{need.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{need.id}}</div>
+    <div>
+      <h3>Name: {{need.name}}</h3>
+      <h3>Cost: {{need.cost}}</h3>
+      <h3>Type: {{need.type}}</h3>
+      <h3>Quantity: {{need.quantity}}</h3>
+      <h3>There are {{basketQuantity(need)}} {{need.name}}s in your basket </h3>
+      <button type="button" (click)="addToBasket()" [disabled]="basketQuantity(need) == need.quantity">add to basket</button> 
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+  </div>

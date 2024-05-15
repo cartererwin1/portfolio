@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="wrapper">
+    <img src="assets/dashimg-2.jpg">
+    <img src="assets/dashimg-6.jpg">
+    <img src="assets/dashimg-7.jpg">
+    <img src="assets/dashimg-1.avif">
+    <img src="assets/dashimg-3.webp">
+    <img src="assets/dashimg-4.webp">
+    <img src="assets/dashimg-5.webp">
+    <img src="assets/dashimg-8.jpeg">
+    <img src="assets/dashimg-9.jpg">
+  </div>
+</div>
+<h2>Top Needs</h2>
+<div class="needs-menu">
+  <a *ngFor="let need of needs"
+      routerLink="/detail/{{need.id}}">
+      {{need.name}}
+  </a>
+</div>
+
+<app-need-search></app-need-search>

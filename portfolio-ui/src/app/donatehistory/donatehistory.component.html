@@ -1,0 +1,8 @@
+<h3>Your History</h3>
+<ul class="needs">
+    <li *ngFor="let need of needs">
+      <a routerLink="/detail/{{need.id}}">
+        <span class="badge">{{need.id}}</span> {{need.name}} - Cost: {{need.cost | currency}}
+      </a>
+    </li>
+  </ul>

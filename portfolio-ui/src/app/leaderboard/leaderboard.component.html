@@ -1,0 +1,8 @@
+<h2>Top Donors</h2>
+
+<ul class="users">
+    <a *ngFor="let user of users"
+      routerLink="/detail/{{user.id}}">
+      {{user.username}}
+    </a>
+</ul>

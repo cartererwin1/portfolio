@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-bottom: .5rem;
+    padding: 20px 20px;
+
+  }
+  .inputBox_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 14em;
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 0.8em;
+    overflow: hidden;
+    margin-left: 630px;
+    
+  }
+
+  .search_icon {
+    height: 1em;
+    padding: 0 0.5em 0 0.8em;
+    fill: #abb2bf;
+    cursor: pointer;
+  }
+
+  .inputBox {
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em 0.5em 0;
+    font-size: 1em;
+    
+  }
+
+  /* input {    
+    display: block;
+    
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    border: 0;
+    padding: 0.5em 1.5em 0.5em 0;
+    font-size: 1em;
+  } */
+  ::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #abb2bf;
+  }
+  
+  input:focus {
+    outline: #336699 auto 1px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  .search-result li a {
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    padding: .5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    margin-left: 640px;
+    
+  }
+  
+  .search-result li a:hover {
+    background-color: #b7bfc2;
+    color: white;
+  }
+  
+  ul.search-result {
+    margin-top: 0;
+    padding-left: 0; 
+  }
+
+.search-component{
+  max-height: 100%;
+  margin-bottom: 400px;
+}

@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+
+<ng-template [ngIf]="currentUser != ''">
+  <h2> Welcome {{currentUser}} !</h2>
+  
+  <button type="button"  title="Logout"
+  (click)="logout()">Logout</button>
+  
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/needs">Needs Cupboard</a>
+    <ng-template [ngIf]="currentUser != 'admin'">
+      <a routerLink="/basketpage">Basket </a>
+      <a routerLink="/historypage">Donation History</a>
+    </ng-template>
+    <a routerLink="/leaderboard">Leaderboard</a>
+    <ng-template [ngIf]="currentUser == 'admin'">
+      <a routerLink="/adminpage">Admin</a>
+    </ng-template>
+  </nav>
+
+  
+  
+</ng-template>
+<router-outlet></router-outlet>
